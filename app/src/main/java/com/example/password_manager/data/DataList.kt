@@ -5,8 +5,8 @@ class DataList {
     fun getUsers():List<User>
     {
         return listOf(
-            User(userId = "facebook", password = "saveearth@Rintu"),
-            User(userId = "instagram", password = "saveearth@Rintu"),
+            User(userId = "facebook", password = "saveEarth"),
+            User(userId = "instagram", password = "saveEarth"),
         )
     }
 }
