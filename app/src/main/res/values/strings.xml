@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Password_Manager</string>
+    <string name="user_name">sujan</string>
+    <string name="Add">Add userId and password</string>
+    <string name="User_ID">user id</string>
+    <string name="Password">password</string>
+
+</resources>
