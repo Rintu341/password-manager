@@ -51,7 +51,7 @@ fun ShowUserData(modifier: Modifier = Modifier, user : User, onRemove:()->Unit) 
 @Preview(showBackground = true)
 @Composable
 private fun ShowUserDataPreview() {
-    ShowUserData(user = User(userId = "facebook", password = "saveEarth@Rintu")) {
-
-    }
+//    ShowUserData(user = User(userId = "facebook", password = "saveEarth@Rintu")) {
+//
+//    }
 }

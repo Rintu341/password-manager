@@ -5,11 +5,14 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.password_manager.Screen.MainScreen
 import com.example.password_manager.ui.theme.Password_ManagerTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +31,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun App(modifier: Modifier = Modifier,passwordViewModel: PasswordViewModel) {
 
-    val users = passwordViewModel.dataList
+    val users = passwordViewModel.readAllData.collectAsState().value
     MainScreen(users = users,
         onAddUser = { user->
             passwordViewModel.addUser(user)

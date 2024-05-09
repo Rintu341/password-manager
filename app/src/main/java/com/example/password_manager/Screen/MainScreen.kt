@@ -114,7 +114,7 @@ fun MainScreen(
 @Preview(showBackground = true)
 @Composable
 private fun MainScreenPreview() {
-    MainScreen( users = mutableListOf(User(userId = "facebook", password = "saveEarth@Rintu")),
-        onAddUser = {} , onRemoveUser = {})
+//    MainScreen( users = mutableListOf(User(userId = "facebook", password = "saveEarth@Rintu")),
+//        onAddUser = {} , onRemoveUser = {})
 
 }
